@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ARGuideApp</string>
+    <string name="Home_Info">Привет!\nСегодня мы в России, г. Москва</string>
+    <string name="temperature">+13°С...+16°С</string>
+    <string name="location">Россия, Москва</string>
+    <string name="union_item">Union</string>
+    <string name="robot_item">Robot</string>
+    <string name="bg_item">Bg</string>
+
+
+    <string name="moscow_item">Moscow</string>
+    <string name="saint_petesburg_item">Saint Petesburg</string>
+    <string name="Istambul_item">Istambul</string>
+    <string name="Kazan_item">Kazan</string>
+    <string name="Tokyo_item">Tokyo</string>
+    <string name="Toronto_item">Toronto</string>
+    <string name="Rome_item">Rome</string>
+    <string name="Budapesht_item">Budapesht</string>
+    <string name="Venice_item">Venice</string>
+    <string name="London_item">London</string>
+    <string name="Paris_item">Paris</string>
+
+
+    <string name="BgButton_item">BgButton</string>
+    <string name="MoreButton_item">MoreButton</string>
+    <string name="BGMenu_item">BgMenu</string>
+    <string name="ActiveHomePageButton_item">HomePageButton</string>
+    <string name="InactiveCalendarButton_item">InactiveCalendarButton</string>
+    <string name="InactiveProfileButton_item">InactiveProfileButton</string>
+    <string name="Search">Поиск</string>
+    <string name="Scrolling">Список городов</string>
+
+
+</resources>

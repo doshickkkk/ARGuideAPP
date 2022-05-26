@@ -1,0 +1,248 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="360dp"
+    android:layout_height="780dp"
+    android:background="@color/mybackground"
+    android:orientation="vertical"
+    tools:context=".MoreCitiesActivity">
+
+    <ImageView
+        android:id="@+id/BgMenu"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:contentDescription="@string/BGMenu_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/ic_menubg"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/ActiveHomePageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/ActiveHomePageButton_item"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="GoToHomePage"
+        app:layout_constraintBottom_toBottomOf="@+id/BgMenu"
+        app:layout_constraintEnd_toEndOf="@+id/BgMenu"
+        app:layout_constraintStart_toStartOf="@+id/BgMenu"
+        app:layout_constraintTop_toTopOf="@+id/BgMenu"
+        app:layout_constraintVertical_bias="0.392"
+        app:srcCompat="@drawable/ic_activehomepage" />
+
+    <ImageButton
+        android:id="@+id/InactiveCalendarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BgMenu"
+        app:layout_constraintEnd_toStartOf="@+id/ActiveHomePageButton"
+        app:layout_constraintStart_toStartOf="@+id/BgMenu"
+        app:layout_constraintTop_toTopOf="@+id/BgMenu"
+        app:srcCompat="@drawable/ic_inactivecalendar"
+        android:contentDescription="@string/InactiveCalendarButton_item"/>
+
+    <ImageButton
+        android:id="@+id/InactiveProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/InactiveProfileButton_item"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BgMenu"
+        app:layout_constraintEnd_toEndOf="@+id/BgMenu"
+        app:layout_constraintStart_toEndOf="@+id/ActiveHomePageButton"
+        app:layout_constraintTop_toTopOf="@+id/BgMenu"
+        app:srcCompat="@drawable/ic_inactiveaccount" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="360dp"
+        android:layout_height="701dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Cities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Scrolling"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/moscowbutton"
+                android:layout_width="144dp"
+                android:layout_height="208dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/moscow_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/moscowbutton" />
+
+            <ImageButton
+                android:id="@+id/spbutton"
+                android:layout_width="184dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/saint_petesburg_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toEndOf="@+id/moscowbutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/saintpetersburgbutton" />
+
+            <ImageButton
+                android:id="@+id/KazanButton"
+                android:layout_width="184dp"
+                android:layout_height="203dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Kazan_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spbutton"
+                app:srcCompat="@drawable/kazan"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/istambulbutton"
+                android:layout_width="144dp"
+                android:layout_height="221dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Istambul_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/moscowbutton"
+                app:srcCompat="@drawable/istanbul" />
+
+            <ImageButton
+                android:id="@+id/tokyoButton"
+                android:layout_width="184dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Tokyo_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.96"
+                app:layout_constraintStart_toEndOf="@+id/istambulbutton"
+                app:layout_constraintTop_toBottomOf="@+id/KazanButton"
+                app:srcCompat="@drawable/tokyobutton" />
+
+            <ImageButton
+                android:id="@+id/torontoButton"
+                android:layout_width="147dp"
+                android:layout_height="215dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Toronto_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/istambulbutton"
+                app:srcCompat="@drawable/torontobutton" />
+
+            <ImageButton
+                android:id="@+id/romeButton"
+                android:layout_width="184dp"
+                android:layout_height="126dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Rome_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/torontoButton"
+                app:layout_constraintTop_toBottomOf="@+id/tokyoButton"
+                app:srcCompat="@drawable/romebutton" />
+
+            <ImageButton
+                android:id="@+id/budapeshtButton"
+                android:layout_width="185dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Budapesht_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/romeButton"
+                app:srcCompat="@drawable/budapeshtbutton" />
+
+            <ImageButton
+                android:id="@+id/veniceButton"
+                android:layout_width="147dp"
+                android:layout_height="151dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Venice_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/torontoButton"
+                app:srcCompat="@drawable/venicebutton" />
+
+            <ImageButton
+                android:id="@+id/londonButton"
+                android:layout_width="187dp"
+                android:layout_height="222dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/London_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/veniceButton"
+                app:srcCompat="@drawable/londonbutton" />
+
+            <ImageButton
+                android:id="@+id/parisButton"
+                android:layout_width="148dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Paris_item"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budapeshtButton"
+                app:srcCompat="@drawable/parisbutton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
