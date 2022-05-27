@@ -43,13 +43,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/InactiveCalendarButton_item"
         android:minHeight="48dp"
+        android:onClick="CalendarPage"
         app:layout_constraintBottom_toBottomOf="@+id/BgMenu"
         app:layout_constraintEnd_toStartOf="@+id/ActiveHomePageButton"
         app:layout_constraintStart_toStartOf="@+id/BgMenu"
         app:layout_constraintTop_toTopOf="@+id/BgMenu"
-        app:srcCompat="@drawable/ic_inactivecalendar"
-        android:contentDescription="@string/InactiveCalendarButton_item"/>
+        app:srcCompat="@drawable/ic_inactivecalendar" />
 
     <ImageButton
         android:id="@+id/InactiveProfileButton"

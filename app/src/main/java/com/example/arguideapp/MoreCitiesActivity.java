@@ -30,4 +30,15 @@ public class MoreCitiesActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void CalendarPage(View v) {
+        ImageButton CalendarPage = (ImageButton) findViewById(R.id.InactiveCalendarButton);
+
+        CalendarPage.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                Intent intent = new Intent(MoreCitiesActivity.this, Calendar.class);
+                startActivity(intent);
+            }
+        });
+    }
 }
