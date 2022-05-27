@@ -14,31 +14,22 @@ public class MoreCitiesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more_cities);
-
 
     }
 
     public void GoToHomePage(View v) {
-        ImageButton GoToHomePage = (ImageButton) findViewById(R.id.ActiveHomePageButton);
 
-        GoToHomePage.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View view) {
-                Intent intent = new Intent(MoreCitiesActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        Intent intent = new Intent(MoreCitiesActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 
     public void CalendarPage(View v) {
-        ImageButton CalendarPage = (ImageButton) findViewById(R.id.InactiveCalendarButton);
 
-        CalendarPage.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View view) {
-                Intent intent = new Intent(MoreCitiesActivity.this, Calendar.class);
-                startActivity(intent);
-            }
-        });
+        Intent intent = new Intent(MoreCitiesActivity.this, Calendar.class);
+        startActivity(intent);
+
     }
 }
