@@ -1,4 +1,4 @@
-package com.example.arguideapp.ui.login;
+package  com.example.arguideapp.ui.login;
 
 /**
  * Class exposing authenticated user details to the UI.
