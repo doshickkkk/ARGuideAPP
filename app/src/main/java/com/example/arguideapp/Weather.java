@@ -123,7 +123,6 @@ public class Weather extends AppCompatActivity {
                 pressure.setText("Давление: " + jsonObject.getJSONObject("main").getInt("pressure") + " Па");
                 humidity.setText("Влажность: " + jsonObject.getJSONObject("main").getInt("humidity") + " %");
                 icon.setText(jsonArray.getJSONArray("weather")[0].getJsonString("icon") + "%");
-
 //
             } catch (JSONException e) {
                 e.printStackTrace();
