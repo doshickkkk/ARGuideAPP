@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.BufferedReader;
@@ -113,6 +114,7 @@ public class Weather extends AppCompatActivity {
             try {
 
                 JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = new JSONArray(result);
                 // Обрабатываем JSON и устанавливаем данные в текстовые надписи
                 temp_info.setText(jsonObject.getJSONObject("main").getInt("temp") + "°С");
                 temp_feels.setText("Ощущается: " + jsonObject.getJSONObject("main").getInt("feels_like") + "°С");
@@ -120,7 +122,7 @@ public class Weather extends AppCompatActivity {
                 temp_min.setText(jsonObject.getJSONObject("main").getInt("temp_min") + "°");
                 pressure.setText("Давление: " + jsonObject.getJSONObject("main").getInt("pressure") + " Па");
                 humidity.setText("Влажность: " + jsonObject.getJSONObject("main").getInt("humidity") + " %");
-                icon.setText(getJsonArray("weather") [0].getJsonString("icon") + "%");
+                icon.setText(jsonArray.getJSONArray("weather")[0].getJsonString("icon") + "%");
 
 //
             } catch (JSONException e) {
