@@ -32,4 +32,18 @@ public class MoreCitiesActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void MoscowPage(View v) {
+
+        Intent intent = new Intent(MoreCitiesActivity.this, MoscowEvents.class);
+        startActivity(intent);
+
+    }
+
+    public void ProfilePage(View v) {
+
+        Intent intent = new Intent(MoreCitiesActivity.this, profile.class);
+        startActivity(intent);
+
+    }
 }

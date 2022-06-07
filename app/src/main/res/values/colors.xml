@@ -2,4 +2,5 @@
 <resources>
     <color name="mybackground">#FFFF</color>
     <color name="TextColor">#4A4A4A</color>
+    <color name="LightTextColor">#FFFFFF</color>
 </resources>

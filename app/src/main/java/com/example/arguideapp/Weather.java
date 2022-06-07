@@ -3,17 +3,12 @@ package com.example.arguideapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,27 +17,43 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class MainActivity extends AppCompatActivity {
+public class Weather extends AppCompatActivity {
 
-    private TextView min_max;
+    private TextView temp_info;
+    private TextView temp_max;
+    private TextView temp_min;
+    private TextView description;
+    private TextView temp_feels;
+    private TextView pressure;
+    private TextView humidity;
+    private TextView icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        min_max = findViewById(R.id.min_max_temperature);
+        setContentView(R.layout.activity_weather);
+        temp_info = findViewById(R.id.temperature_field);
+        description = findViewById(R.id.description);
+        temp_feels = findViewById(R.id.FeelsLike);
+        temp_max = findViewById(R.id.maxTemp);
+        temp_min = findViewById(R.id.minTemp);
+        pressure = findViewById(R.id.pressure);
+        humidity = findViewById(R.id.humidity);
+        icon = findViewById(R.id.weather_icon);
         new GetURLData().execute(url);
     }
 
+
     String url = "https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=92a7a0088c1530207c6e4d38e7e58027&units=metric&lang=ru";
+    String date;
 
     @SuppressLint("StaticFieldLeak")
-    private class GetURLData extends AsyncTask<String, String, String> {
+    public class GetURLData extends AsyncTask<String, String, String> {
 
         // Будет выполнено до отправки данных по URL
         protected void onPreExecute() {
             super.onPreExecute();
-            min_max.setText("Ожидайте...");
+            //temp_info.setText("Ожидайте...");
         }
 
         // Будет выполняться во время подключения по URL
@@ -100,39 +111,22 @@ public class MainActivity extends AppCompatActivity {
 
             // Конвертируем JSON формат и выводим данные в текстовом поле
             try {
+
                 JSONObject jsonObject = new JSONObject(result);
-                min_max.setText(jsonObject.getJSONObject("main").getInt("temp_min") + "..." + jsonObject.getJSONObject("main").getInt("temp_max") + "°С");
+                // Обрабатываем JSON и устанавливаем данные в текстовые надписи
+                temp_info.setText(jsonObject.getJSONObject("main").getInt("temp") + "°С");
+                temp_feels.setText("Ощущается: " + jsonObject.getJSONObject("main").getInt("feels_like") + "°С");
+                temp_max.setText(jsonObject.getJSONObject("main").getInt("temp_max") + "°");
+                temp_min.setText(jsonObject.getJSONObject("main").getInt("temp_min") + "°");
+                pressure.setText("Давление: " + jsonObject.getJSONObject("main").getInt("pressure") + " Па");
+                humidity.setText("Влажность: " + jsonObject.getJSONObject("main").getInt("humidity") + " %");
+                icon.setText(getJsonArray("weather") [0].getJsonString("icon") + "%");
+
+//
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public void MoreCitiesPage(View v) {
-        Intent intent = new Intent(MainActivity.this, MoreCitiesActivity.class);
-        startActivity(intent);
-    }
-
-    public void CalendarPage(View v) {
-                Intent intent = new Intent(MainActivity.this, Calendar.class);
-                startActivity(intent);
-    }
-
-    public void MoscowPage(View v) {
-        Intent intent = new Intent(MainActivity.this, MoscowEvents.class);
-        startActivity(intent);
-    }
-
-    public void WeatherPage(View v) {
-        Intent intent = new Intent(MainActivity.this, Weather.class);
-        startActivity(intent);
-    }
-
-    public void ProfilePage(View v) {
-        Intent intent = new Intent(MainActivity.this, profile.class);
-        startActivity(intent);
-    }
-
-
 }
-

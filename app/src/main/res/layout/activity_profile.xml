@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="780dp"
+    android:background="@color/mybackground"
+    tools:context=".profile">
+
+    <ImageView
+        android:id="@+id/profilebg"
+        android:layout_width="361dp"
+        android:layout_height="423dp"
+        android:contentDescription="@string/settingsbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_profilebg" />
+
+    <ImageView
+        android:id="@+id/bgMenu"
+        android:layout_width="362dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/BGMenu_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/ic_menubg" />
+
+    <ImageButton
+        android:id="@+id/InactiveHomePageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/InActiveHomePageButton_item"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="HomePage"
+        app:layout_constraintBottom_toBottomOf="@+id/bgMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgMenu"
+        app:srcCompat="@drawable/ic_inactivehomepage" />
+
+    <ImageButton
+        android:id="@+id/InActiveCalendarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/InactiveCalendarButton_item"
+        android:minHeight="48dp"
+        android:onClick="CalendarPage"
+        app:layout_constraintBottom_toBottomOf="@+id/bgMenu"
+        app:layout_constraintEnd_toStartOf="@+id/InactiveHomePageButton"
+        app:layout_constraintStart_toStartOf="@+id/bgMenu"
+        app:layout_constraintTop_toTopOf="@+id/bgMenu"
+        app:srcCompat="@drawable/ic_inactivecalendar" />
+
+    <ImageButton
+        android:id="@+id/ActiveProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/ActiveProfileButton_item"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/InactiveHomePageButton"
+        app:layout_constraintTop_toTopOf="@+id/bgMenu"
+        app:srcCompat="@drawable/ic_activeaccountbutton" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="161dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/profilebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/avatar"
+        android:contentDescription="@string/Avatar"/>
+
+    <ImageButton
+        android:id="@+id/userinfo"
+        android:layout_width="323dp"
+        android:layout_height="68dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/profileinfo"
+        android:onClick="UserInfo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bgMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profilebg"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/ic_personalinfo" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="323dp"
+        android:layout_height="68dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/about"
+        android:onClick="AboutAppPage"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bgMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userinfo"
+        app:layout_constraintVertical_bias="0.26"
+        app:srcCompat="@drawable/ic_aboutapp" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

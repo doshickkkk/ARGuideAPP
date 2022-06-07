@@ -6,6 +6,38 @@
     <string name="union_item">Union</string>
     <string name="robot_item">Robot</string>
     <string name="bg_item">Bg</string>
+    <string name="Moscow">Москва</string>
+    <string name="MoscowEvents1">Найдено</string>
+    <string name="CountMoscowEvents">1 573</string>
+    <string name="MoscowEvents2">события</string>
+    <string name="Dates">17 июня - 11 июля 2022 г.</string>
+    <string name="event1">событие1</string>
+    <string name="event2">событие2</string>
+    <string name="event3">событие3</string>
+    <string name="event4">событие4</string>
+
+    <string name="naming1">On Board</string>
+    <string name="naming2">Augmented Reality Guide</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="logbutton">Кнопка войти</string>
+    <string name="bglog">задник1</string>
+    <string name="bgpswd">задник2</string>
+
+    <string name="back">назад</string>
+    <string name="pageinfo">Редактирование личной информации</string>
+    <string name="Name">Ваше имя</string>
+    <string name="NameFiels">имечко</string>
+
+    <string name="AboutApp">О приложении</string>
+    <string name="Version">Версия 8.9.0, сборка 8271</string>
+    <string name="Corporation">2022 OnBoard Corporation</string>
+
+    <string name="Avatar">аватар</string>
+    <string name="profileinfo">инфа о профиле</string>
+    <string name="settingsbg">задник настроек</string>
+    <string name="settingsbtn">настройки</string>
+    <string name="about">о приложении</string>
 
 
     <string name="moscow_item">Moscow</string>
@@ -21,12 +53,16 @@
     <string name="Paris_item">Paris</string>
 
 
+
+
     <string name="BgButton_item">BgButton</string>
     <string name="MoreButton_item">MoreButton</string>
     <string name="BGMenu_item">BgMenu</string>
     <string name="ActiveHomePageButton_item">HomePageButton</string>
+    <string name="InActiveHomePageButton_item">HomePageButton</string>
     <string name="InactiveCalendarButton_item">InactiveCalendarButton</string>
     <string name="InactiveProfileButton_item">InactiveProfileButton</string>
+    <string name="ActiveProfileButton_item">ActiveProfileButton</string>
     <string name="Search">Поиск</string>
     <string name="Scrolling">Список городов</string>
     <string name="title_activity_login">LoginActivity</string>
@@ -38,6 +74,23 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <!-- Put your own APP ID here -->
+    <string name="open_weather_maps_app_id">92a7a0088c1530207c6e4d38e7e58027</string>
+
+    <string name="weather_sunny">f00d</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+    <string name="City_name_Weather">Москва</string>
+    <string name="divider">/</string>
+
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
 
 
 </resources>
