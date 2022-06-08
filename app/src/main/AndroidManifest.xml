@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARGuideApp">
         <activity
+            android:name=".PeterTheFirst"
+            android:exported="false" />
+        <activity
             android:name=".AboutApp"
             android:exported="false" />
         <activity
@@ -30,7 +33,7 @@
             android:name=".MoscowEvents"
             android:exported="false" />
         <activity
-            android:name=".Calendar"
+            android:name=".Schedule"
             android:exported="false" />
         <activity
             android:name=".MoreCitiesActivity"

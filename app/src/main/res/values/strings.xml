@@ -27,6 +27,7 @@
     <string name="back">назад</string>
     <string name="pageinfo">Редактирование личной информации</string>
     <string name="Name">Ваше имя</string>
+    <string name="SurName">Ваша фамилия</string>
     <string name="NameFiels">имечко</string>
 
     <string name="AboutApp">О приложении</string>
@@ -52,6 +53,20 @@
     <string name="London_item">London</string>
     <string name="Paris_item">Paris</string>
 
+    <string name="imageevent">фоточка</string>
+    <string name="bgdescription">еще один задник</string>
+    <string name="PeterTheFirst">Памятник Петру I</string>
+    <string name="MainTitlePeter1">Памятник Петру I в Москве</string>
+    <string name="MainText">Одна из самых масштабных фигур-памятников России находится в Москве.
+        Это памятник Петру I на Москве-реке. Он сооружен на небольшом насыпном островке между рекой и Водоотводным каналом.
+        Выполненный Церетели памятник Петру I в Москве носит официальное название «В ознаменование 300-летия российского флота».
+        Монумент образован из 3 частей: пьедестала, корабля и императора.</string>
+    <string name="MainText1">Окруженный множеством споров по поводу облика, эстетики, размеров,
+        месторасположения и затрат на изготовление и установку, монумент заработал себе неоднозначную славу.
+        После установки памятник Петру Великому в Москве упоминался в различных литературных,
+        музыкальных и кинопроизведениях.</string>
+    <string name="photo1">фоточка1</string>
+    <string name="photo2">фоточка2</string>
 
 
 
@@ -77,16 +92,8 @@
 
     <!-- Put your own APP ID here -->
     <string name="open_weather_maps_app_id">92a7a0088c1530207c6e4d38e7e58027</string>
-
-    <string name="weather_sunny">f00d</string>
-    <string name="weather_clear_night">&#xf02e;</string>
-    <string name="weather_foggy">&#xf014;</string>
-    <string name="weather_cloudy">&#xf013;</string>
-    <string name="weather_rainy">&#xf019;</string>
-    <string name="weather_snowy">&#xf01b;</string>
-    <string name="weather_thunder">&#xf01e;</string>
-    <string name="weather_drizzle">&#xf01c;</string>
     <string name="City_name_Weather">Москва</string>
+    <string name="Weather_Icon">Иконочка</string>
     <string name="divider">/</string>
 
 

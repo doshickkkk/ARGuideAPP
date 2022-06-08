@@ -28,7 +28,13 @@ public class MoscowEvents extends AppCompatActivity {
 
     public void GoToCalendarPage(View v) {
 
-        Intent intent = new Intent(MoscowEvents.this, Calendar.class);
+        Intent intent = new Intent(MoscowEvents.this, Schedule.class);
+        startActivity(intent);
+    }
+
+    public void GoToFirstEvent(View v) {
+
+        Intent intent = new Intent(MoscowEvents.this, PeterTheFirst.class);
         startActivity(intent);
     }
 }

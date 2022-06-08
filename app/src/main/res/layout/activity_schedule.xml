@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="360dp"
     android:layout_height="780dp"
-    tools:context=".Calendar">
+    tools:context=".Schedule">
 
     <CalendarView
         android:id="@+id/calendarView"
