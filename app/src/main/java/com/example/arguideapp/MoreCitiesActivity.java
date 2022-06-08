@@ -44,4 +44,11 @@ public class MoreCitiesActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void SPEvents(View v) {
+
+        Intent intent = new Intent(MoreCitiesActivity.this, SaintPetersburgEvents.class);
+        startActivity(intent);
+
+    }
 }

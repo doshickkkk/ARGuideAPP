@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="360dp"
     android:layout_height="780dp"
-    android:background="@color/mybackground"
-    tools:context=".Schedule">
+    tools:context=".July">
 
     <ImageView
         android:id="@+id/menubg"
@@ -27,7 +26,7 @@
         android:contentDescription="@string/ActiveHomePageButton_item"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:onClick="ToMainPage"
+        android:onClick="ToMainPageFromJuly"
         app:layout_constraintBottom_toBottomOf="@+id/menubg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/menubg"
@@ -41,6 +40,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/ActiveCalendarButton_item"
         android:minHeight="48dp"
+        android:onClick="ToPlanElementFromJuly"
         app:layout_constraintBottom_toBottomOf="@+id/menubg"
         app:layout_constraintEnd_toStartOf="@+id/InActiveHomeButton"
         app:layout_constraintStart_toStartOf="@+id/menubg"
@@ -55,7 +55,7 @@
         android:contentDescription="@string/InactiveProfileButton_item"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:onClick="ToProfilePage"
+        android:onClick="ToProfilePageFromJuly"
         app:layout_constraintBottom_toBottomOf="@+id/menubg"
         app:layout_constraintEnd_toEndOf="@+id/menubg"
         app:layout_constraintStart_toEndOf="@+id/InActiveHomeButton"
@@ -97,11 +97,12 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/June"
         android:minHeight="48dp"
+        android:onClick="ToJuneFromJuly"
         app:layout_constraintBottom_toTopOf="@+id/coolline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titlePlan"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_junewithline" />
+        app:srcCompat="@drawable/ic_junewithoutline" />
 
     <ImageButton
         android:id="@+id/JulyWithLine"
@@ -111,12 +112,11 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/July"
         android:minHeight="48dp"
-        android:onClick="ToJuly"
         app:layout_constraintBottom_toTopOf="@+id/coolline"
         app:layout_constraintStart_toEndOf="@+id/JuneWithLine"
         app:layout_constraintTop_toBottomOf="@+id/titlePlan"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_julywithoutline" />
+        app:srcCompat="@drawable/ic_julywithline" />
 
     <ImageButton
         android:id="@+id/AugustWithLine"
@@ -126,28 +126,20 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/August"
         android:minHeight="48dp"
-        android:onClick="ToAugust"
         app:layout_constraintBottom_toTopOf="@+id/coolline"
         app:layout_constraintStart_toEndOf="@+id/JulyWithLine"
         app:layout_constraintTop_toBottomOf="@+id/titlePlan"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_augustwithoutline" />
 
-    <ImageButton
-        android:id="@+id/typeofplan"
-        android:layout_width="332dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/typeofplane"
-        android:onClick="ToPlanElement"
-        android:scaleType="fitCenter"
+    <ImageView
+        android:id="@+id/empty1"
+        android:layout_width="240dp"
+        android:layout_height="388dp"
         app:layout_constraintBottom_toBottomOf="@+id/coolline"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/coolline"
+        app:layout_constraintStart_toStartOf="@+id/coolline"
         app:layout_constraintTop_toTopOf="@+id/coolline"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_typeofplan" />
+        app:srcCompat="@drawable/empty" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARGuideApp">
         <activity
+            android:name=".MoscowEvent3"
+            android:exported="false" />
+        <activity
+            android:name=".MoscowEvent2"
+            android:exported="false" />
+        <activity
+            android:name=".August"
+            android:exported="false" />
+        <activity
+            android:name=".July"
+            android:exported="false" />
+        <activity
+            android:name=".SaintPetersburgEvents"
+            android:exported="false" />
+        <activity
+            android:name=".SPDay2"
+            android:exported="false" />
+        <activity
+            android:name=".saintpeterspurgplan"
+            android:exported="false" />
+        <activity
             android:name=".PeterTheFirst"
             android:exported="false" />
         <activity

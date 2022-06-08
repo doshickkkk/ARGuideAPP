@@ -5,7 +5,7 @@
     android:layout_width="360dp"
     android:layout_height="780dp"
     android:background="@color/mybackground"
-    tools:context=".Schedule">
+    tools:context=".saintpeterspurgplan">
 
     <ImageView
         android:id="@+id/menubg"
@@ -27,7 +27,7 @@
         android:contentDescription="@string/ActiveHomePageButton_item"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:onClick="ToMainPage"
+        android:onClick="ToMain"
         app:layout_constraintBottom_toBottomOf="@+id/menubg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/menubg"
@@ -41,6 +41,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/ActiveCalendarButton_item"
         android:minHeight="48dp"
+        android:onClick="ToCalendar"
         app:layout_constraintBottom_toBottomOf="@+id/menubg"
         app:layout_constraintEnd_toStartOf="@+id/InActiveHomeButton"
         app:layout_constraintStart_toStartOf="@+id/menubg"
@@ -55,7 +56,7 @@
         android:contentDescription="@string/InactiveProfileButton_item"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:onClick="ToProfilePage"
+        android:onClick="ToProfile"
         app:layout_constraintBottom_toBottomOf="@+id/menubg"
         app:layout_constraintEnd_toEndOf="@+id/menubg"
         app:layout_constraintStart_toEndOf="@+id/InActiveHomeButton"
@@ -63,91 +64,93 @@
         app:srcCompat="@drawable/ic_inactiveaccount" />
 
     <ImageView
-        android:id="@+id/coolline"
+        android:id="@+id/coolline2"
         android:layout_width="361dp"
         android:layout_height="484dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="@string/line"
         app:layout_constraintBottom_toTopOf="@+id/menubg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.94"
-        app:srcCompat="@drawable/ic_justacoolline" />
+        app:srcCompat="@drawable/ic_justacoolline"
+        android:contentDescription="@string/line"/>
 
     <TextView
-        android:id="@+id/titlePlan"
+        android:id="@+id/CityPlan"
         android:layout_width="307dp"
         android:layout_height="59dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
-        android:fontFamily="@font/sf_pro_display_bold"
-        android:text="@string/PlanTitle"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:text="@string/CityPlan"
         android:textColor="@color/TextColor"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/JuneWithLine"
+        android:id="@+id/dayoneline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/June"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/coolline"
+        app:layout_constraintBottom_toTopOf="@+id/coolline2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titlePlan"
+        app:layout_constraintTop_toBottomOf="@+id/CityPlan"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_junewithline" />
+        app:srcCompat="@drawable/ic_day1" />
 
     <ImageButton
-        android:id="@+id/JulyWithLine"
+        android:id="@+id/daytwonoline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/July"
-        android:minHeight="48dp"
-        android:onClick="ToJuly"
-        app:layout_constraintBottom_toTopOf="@+id/coolline"
-        app:layout_constraintStart_toEndOf="@+id/JuneWithLine"
-        app:layout_constraintTop_toBottomOf="@+id/titlePlan"
+        android:onClick="ToSecondDay"
+        app:layout_constraintBottom_toTopOf="@+id/coolline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dayoneline"
+        app:layout_constraintTop_toBottomOf="@+id/CityPlan"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_julywithoutline" />
+        app:srcCompat="@drawable/ic_secondaynoline" />
 
-    <ImageButton
-        android:id="@+id/AugustWithLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/August"
-        android:minHeight="48dp"
-        android:onClick="ToAugust"
-        app:layout_constraintBottom_toTopOf="@+id/coolline"
-        app:layout_constraintStart_toEndOf="@+id/JulyWithLine"
-        app:layout_constraintTop_toBottomOf="@+id/titlePlan"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_augustwithoutline" />
-
-    <ImageButton
-        android:id="@+id/typeofplan"
-        android:layout_width="332dp"
+    <ImageView
+        android:id="@+id/firststep"
+        android:layout_width="325dp"
         android:layout_height="81dp"
         android:layout_marginStart="6dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/typeofplane1"
+        app:layout_constraintStart_toStartOf="@+id/coolline2"
+        app:layout_constraintTop_toTopOf="@+id/coolline2"
+        app:srcCompat="@drawable/ic_firststep" />
+
+    <ImageView
+        android:id="@+id/secondstep"
+        android:layout_width="321dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/typeofplane2"
+        app:layout_constraintStart_toStartOf="@+id/coolline2"
+        app:layout_constraintTop_toBottomOf="@+id/firststep"
+        app:srcCompat="@drawable/ic_secondstep" />
+
+    <ImageButton
+        android:id="@+id/thirdstep"
+        android:layout_width="330dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/typeofplane"
-        android:onClick="ToPlanElement"
+        android:contentDescription="@string/typeofplane3"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/coolline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/coolline"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_typeofplan" />
+        app:layout_constraintStart_toStartOf="@+id/coolline2"
+        app:layout_constraintTop_toBottomOf="@+id/secondstep"
+        app:srcCompat="@drawable/ic_thirdstep" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

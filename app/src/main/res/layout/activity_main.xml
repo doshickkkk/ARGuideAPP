@@ -197,6 +197,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/saint_petesburg_item"
+        android:onClick="ToSP"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"

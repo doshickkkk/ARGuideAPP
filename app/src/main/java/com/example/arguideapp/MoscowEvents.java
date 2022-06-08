@@ -37,4 +37,10 @@ public class MoscowEvents extends AppCompatActivity {
         Intent intent = new Intent(MoscowEvents.this, PeterTheFirst.class);
         startActivity(intent);
     }
+
+    public void GoToSecondEvent(View v) {
+
+        Intent intent = new Intent(MoscowEvents.this, MoscowEvent2.class);
+        startActivity(intent);
+    }
 }

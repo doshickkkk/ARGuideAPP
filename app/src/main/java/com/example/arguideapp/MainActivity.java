@@ -193,6 +193,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ToSP(View v) {
+        Intent intent = new Intent(MainActivity.this, SaintPetersburgEvents.class);
+        startActivity(intent);
+    }
+
 
 }
 
