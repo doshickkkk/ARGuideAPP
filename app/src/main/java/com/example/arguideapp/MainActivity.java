@@ -198,6 +198,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void SOOON(View v) {
+        Intent intent = new Intent(MainActivity.this, ComingSoon.class);
+        startActivity(intent);
+    }
+
 
 }
 

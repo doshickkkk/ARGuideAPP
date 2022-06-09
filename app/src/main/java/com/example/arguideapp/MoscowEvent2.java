@@ -19,4 +19,10 @@ public class MoscowEvent2 extends AppCompatActivity {
         Intent intent = new Intent(MoscowEvent2.this, MoscowEvents.class);
         startActivity(intent);
     }
+
+    public void CooooomiingSOOOOn(View v) {
+
+        Intent intent = new Intent(MoscowEvent2.this, ComingSoon.class);
+        startActivity(intent);
+    }
 }

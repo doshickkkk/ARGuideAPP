@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="360dp"
     android:layout_height="780dp"
+    android:background="@color/mybackground"
     tools:context=".July">
 
     <ImageView
@@ -126,6 +127,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/August"
         android:minHeight="48dp"
+        android:onClick="ToAugustFromJuly"
         app:layout_constraintBottom_toTopOf="@+id/coolline"
         app:layout_constraintStart_toEndOf="@+id/JulyWithLine"
         app:layout_constraintTop_toBottomOf="@+id/titlePlan"

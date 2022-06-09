@@ -71,8 +71,8 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="183dp"
-        android:layout_height="85dp"
+        android:layout_width="305dp"
+        android:layout_height="83dp"
         android:fontFamily="@font/sf_pro_display_semibold"
         android:textAlignment="center"
         android:textColor="@color/TextColor"

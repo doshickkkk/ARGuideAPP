@@ -149,4 +149,20 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+    <ImageButton
+        android:id="@+id/addeventtoplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/moscow_item"
+        android:onClick="CooooomiingSOOOOn"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagepeter1"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@drawable/addbutton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

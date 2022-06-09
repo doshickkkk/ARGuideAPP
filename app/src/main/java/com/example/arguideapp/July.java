@@ -32,4 +32,9 @@ public class July extends AppCompatActivity {
         Intent intent = new Intent(July.this, Schedule.class);
         startActivity(intent);
     }
+
+    public void ToAugustFromJuly(View v) {
+        Intent intent = new Intent(July.this, August.class);
+        startActivity(intent);
+    }
 }

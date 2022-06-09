@@ -43,4 +43,15 @@ public class MoscowEvents extends AppCompatActivity {
         Intent intent = new Intent(MoscowEvents.this, MoscowEvent2.class);
         startActivity(intent);
     }
+
+    public void GoToThirdEvent(View v) {
+
+        Intent intent = new Intent(MoscowEvents.this, MoscowEvent3.class);
+        startActivity(intent);
+    }
+    public void HzKakoySoon(View v) {
+
+        Intent intent = new Intent(MoscowEvents.this, ComingSoon.class);
+        startActivity(intent);
+    }
 }

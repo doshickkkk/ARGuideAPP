@@ -146,7 +146,24 @@
                         android:contentDescription="@string/photo1"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <ImageButton
+        android:id="@+id/cumsoon"
+        android:layout_width="352dp"
+        android:layout_height="66dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:onClick="SoonYeah"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagepeter1"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/addbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

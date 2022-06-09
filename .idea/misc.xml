@@ -19,10 +19,11 @@
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_about_app.xml" value="0.25" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_august.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_calendar.xml" value="0.33" />
+        <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_coming_soon.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_july.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_june.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_more_cities.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_moscow_event2.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_moscow_event3.xml" value="0.3009833262077811" />
@@ -30,7 +31,7 @@
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_peter_the_first.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_saint_petersburg_events.xml" value="0.3009833262077811" />
-        <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_saintpeterspurgplan.xml" value="0.5" />
+        <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_saintpeterspurgplan.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_schedule.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_spday2.xml" value="0.33" />
         <entry key="..\:/Users/garku/AndroidStudioProjects/ARGuideApp/app/src/main/res/layout/activity_userinfo.xml" value="0.33" />

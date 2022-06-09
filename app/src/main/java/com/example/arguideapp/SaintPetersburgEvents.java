@@ -28,4 +28,10 @@ public class SaintPetersburgEvents extends AppCompatActivity {
         Intent intent = new Intent(SaintPetersburgEvents.this, Schedule.class);
         startActivity(intent);
     }
+
+    public void SoonSoon(View v) {
+        Intent intent = new Intent(SaintPetersburgEvents.this, ComingSoon.class);
+        startActivity(intent);
+    }
+
 }

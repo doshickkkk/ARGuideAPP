@@ -57,6 +57,7 @@
         app:srcCompat="@drawable/ic_backbutton" />
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="360dp"
         android:layout_height="503dp"
         app:layout_constraintBottom_toBottomOf="@+id/bgdescriptionevent"
@@ -139,14 +140,31 @@
                         android:layout_width="308dp"
                         android:layout_height="202dp"
                         android:layout_marginStart="16dp"
+                        android:contentDescription="@string/photo1"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/peterthe1"
-                        android:contentDescription="@string/photo1"/>
+                        app:srcCompat="@drawable/peterthe1" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/NameFiels"
+        android:onClick="CumSoon"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagepeter1"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@drawable/addbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

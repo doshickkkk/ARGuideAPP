@@ -24,7 +24,7 @@ public class August extends AppCompatActivity {
     }
 
     public void ToJuleElementFromAugust(View v) {
-        Intent intent = new Intent(August.this, Schedule.class);
+        Intent intent = new Intent(August.this, July.class);
         startActivity(intent);
     }
 

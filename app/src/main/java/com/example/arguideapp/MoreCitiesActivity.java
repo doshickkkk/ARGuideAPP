@@ -51,4 +51,11 @@ public class MoreCitiesActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void Soon(View v) {
+
+        Intent intent = new Intent(MoreCitiesActivity.this, ComingSoon.class);
+        startActivity(intent);
+
+    }
 }

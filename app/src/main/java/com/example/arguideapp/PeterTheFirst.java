@@ -18,4 +18,9 @@ public class PeterTheFirst extends AppCompatActivity {
         Intent intent = new Intent(PeterTheFirst.this, MoscowEvents.class);
         startActivity(intent);
     }
+
+    public void CumSoon(View v) {
+        Intent intent = new Intent(PeterTheFirst.this, ComingSoon.class);
+        startActivity(intent);
+    }
 }
